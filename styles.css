@@ -4,6 +4,123 @@
   --background-color: #eeeff1;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: #ffffff;
+    --link-color: #6b9aff;
+    --background-color: #1a1a1a;
+  }
+
+  .timeline-icon:not([data-logo]) {
+    background-color: #2d2d2d !important;
+  }
+
+  .timeline-item {
+    border-bottom: 1px solid #404040 !important;
+  }
+
+  .timeline-content .period,
+  .timeline-content .location {
+    color: #cccccc !important;
+  }
+
+  .research-item {
+    background-color: #2d2d2d !important;
+    border-color: #404040 !important;
+    color: #ffffff !important;
+  }
+
+  .research-item .description,
+  .research-item .title,
+  .research-item h3 {
+    color: #ffffff !important;
+  }
+
+  .research-item .keywords,
+  .cert-item p {
+    color: #cccccc !important;
+  }
+
+  .skills-section .cells .cell {
+    border-color: #404040 !important;
+    background-color: #2d2d2d !important;
+  }
+
+  .skills-section .cells .cell:hover {
+    border-color: var(--link-color) !important;
+    background-color: #353535 !important;
+  }
+
+  .expandable-header {
+    background-color: #2d2d2d !important;
+    border-color: #404040 !important;
+  }
+
+  .expandable-header:hover {
+    background-color: #353535 !important;
+  }
+
+  .project-item,
+  .blog-item {
+    background: #2d2d2d !important;
+    border-color: #404040 !important;
+    color: #ffffff !important;
+  }
+
+  .project-item .description,
+  .blog-item .description,
+  .project-item h3,
+  .blog-item h3 {
+    color: #ffffff !important;
+  }
+
+  .project-item .period,
+  .blog-item .period {
+    color: #cccccc !important;
+  }
+
+  .project-item:hover,
+  .blog-item:hover {
+    background: #353535 !important;
+  }
+
+  .section-overlay {
+    background-color: rgba(0, 0, 0, 0.85) !important;
+  }
+
+  .section-overlay-content {
+    background: #1a1a1a !important;
+  }
+
+  .modal-content {
+    background: #2d2d2d !important;
+  }
+
+  .modal-close {
+    color: #ffffff !important;
+  }
+
+  .modal-close:hover {
+    background-color: #404040 !important;
+  }
+
+  .modal-header .meta {
+    color: #cccccc !important;
+  }
+
+  .modal-body,
+  .modal-header h2 {
+    color: #ffffff !important;
+  }
+
+  .contact-section .group form input,
+  .contact-section .group form textarea {
+    background-color: #2d2d2d !important;
+    color: #ffffff !important;
+    border-color: var(--link-color) !important;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -164,12 +281,21 @@ nav .right a span {
 }
 
 .timeline-icon[data-logo="uni-hohenheim"] {
-  background-color: #003D7A;
+  background-color: #003D7A !important;
+  padding: 10px !important;
 }
 
 .timeline-icon[data-logo="hilti"] {
-  background-color: #E2001A;
+  background-color: #E2001A !important;
   padding: 0;
+}
+
+.timeline-icon[data-logo="gymnasium"] {
+  background-color: white !important;
+}
+
+.timeline-icon[data-logo="fim-research"] {
+  background-color: white !important;
 }
 
 .timeline-icon img {
