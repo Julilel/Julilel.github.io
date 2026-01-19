@@ -1,0 +1,16 @@
+# IDE
+.idea/
+.vscode/
+
+# Python Virtual Environment
+.venv/
+venv/
+env/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.log
+*.tmp
