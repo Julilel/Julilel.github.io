@@ -1101,3 +1101,11 @@ nav .right a span {
     right: 10px;
   }
 }
+
+.placeholder-message {
+  text-align: center;
+  color: #888;
+  font-style: italic;
+  padding: 2rem 1rem;
+  font-size: 1.1rem;
+}
