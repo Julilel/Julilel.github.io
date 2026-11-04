@@ -300,7 +300,8 @@ nav .right a span {
 
 .timeline-icon[data-logo="tum"],
 .timeline-icon[data-logo="dla"],
-.timeline-icon[data-logo="fim-gmbh"] {
+.timeline-icon[data-logo="fim-gmbh"],
+.timeline-icon[data-logo="efellows"] {
   background-color: white !important;
 }
 
@@ -420,6 +421,21 @@ nav .right a span {
   color: white;
   font-size: 15px;
   font-weight: 600;
+  text-decoration: none;
+  transition: .2s;
+}
+
+.research-item .badge:hover {
+  filter: brightness(.9);
+}
+
+.research-item .badge i {
+  margin-left: 6px;
+  font-size: 12px;
+}
+
+.timeline-content .highlight a {
+  color: var(--link-color);
 }
 
 .research-item .description {
