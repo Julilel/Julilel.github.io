@@ -298,7 +298,9 @@ nav .right a span {
   background-color: white !important;
 }
 
-.timeline-icon[data-logo="tum"] {
+.timeline-icon[data-logo="tum"],
+.timeline-icon[data-logo="dla"],
+.timeline-icon[data-logo="fim-gmbh"] {
   background-color: white !important;
 }
 
@@ -407,6 +409,17 @@ nav .right a span {
 .research-item .period {
   margin-bottom: 10px;
   font-size: 15px;
+}
+
+.research-item .badge {
+  display: inline-block;
+  margin-bottom: 15px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  background-color: var(--link-color);
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
 }
 
 .research-item .description {
