@@ -228,7 +228,7 @@ nav .right a span {
   flex: 5;
 }
 
-.hero-section .text h2 {
+.hero-section .text h1 {
   font-size: 45px;
 }
 
@@ -675,7 +675,7 @@ nav .right a span {
 
 @media (max-width: 850px) {
   /* SECTION 1: Hero */
-  .hero-section .text h2 {
+  .hero-section .text h1 {
     font-size: 35px;
   }
 }
@@ -736,7 +736,7 @@ nav .right a span {
     padding: 0 20px;
   }
 
-  .hero-section .text h2 {
+  .hero-section .text h1 {
     font-size: 30px;
   }
 
@@ -1178,4 +1178,15 @@ nav .right a span {
   font-style: italic;
   padding: 2rem 1rem;
   font-size: 1.1rem;
+}
+
+/* Contact form privacy note */
+.contact-section .form-note {
+  margin-top: 12px;
+  font-size: 13px;
+  opacity: .75;
+}
+
+.contact-section .form-note a {
+  color: var(--link-color);
 }
