@@ -259,6 +259,9 @@ nav .right a span {
 
 .hero-section .headshot img {
   width: 350px;
+  height: auto;
+  /* exact ratio of the original 1280x1432 photo, keeps layout pixel-identical */
+  aspect-ratio: 1280 / 1432;
   border-radius: 50%;
 }
 
@@ -466,9 +469,15 @@ nav .right a span {
   filter: brightness(.9);
 }
 
-.research-item .badge i {
+.research-item .badge i,
+.research-item .badge .icon {
   margin-left: 6px;
   font-size: 12px;
+}
+
+/* matches the font glyph's rounded baseline at 12px */
+.research-item .badge .icon {
+  vertical-align: -2px;
 }
 
 .timeline-content .highlight a {
@@ -729,6 +738,11 @@ nav .right a span {
 
   nav .right a span {
     display: none;
+  }
+
+  /* matches the font glyph's rounded baseline at 22px */
+  nav .right a .icon {
+    vertical-align: -3px;
   }
 
   /* SECTION 1: Hero */
@@ -1189,4 +1203,37 @@ nav .right a span {
 
 .contact-section .form-note a {
   color: var(--link-color);
+}
+
+/* Inline SVG icons (outlines taken from Font Awesome Free 6.7.2, CC BY 4.0) */
+.icon {
+  display: inline-block;
+  width: auto;
+  height: 1em;
+  vertical-align: -0.125em;
+  fill: currentColor;
+  overflow: visible;
+}
+
+.icon-lang {
+  font-size: 30px;
+  color: #4a76ee;
+}
+
+/* Contact form helpers (moved out of inline style attributes for CSP) */
+.hp-field {
+  display: none;
+}
+
+.form-message {
+  display: none;
+  margin-top: 15px;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.form-message-link {
+  color: white;
+  text-decoration: underline;
 }

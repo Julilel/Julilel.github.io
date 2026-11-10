@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src https://api.web3forms.com; form-action https://api.web3forms.com; base-uri 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Julian Leutz - M.Sc. Finance and Information Management student at TUM, former Enterprise & IT Architecture Intern at Hilti, specializing in AI agents, Data Science, and Digital Transformation">
@@ -21,12 +23,29 @@
 
   <link rel="preload" href="fonts/poppins-400-latin.woff2" as="font" type="font/woff2" crossorigin>
 
-  <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
-
-  <link rel="stylesheet" href="styles.css?v=7">
+  <link rel="stylesheet" href="styles.css?v=8">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png">
+
+  <link rel="canonical" href="https://julianleutz.com/">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Julian Leutz",
+    "url": "https://julianleutz.com/",
+    "image": "https://julianleutz.com/images/hero-headshot.jpg",
+    "sameAs": [
+      "https://www.linkedin.com/in/julian-leutz",
+      "https://github.com/Julilel"
+    ],
+    "affiliation": { "@type": "CollegeOrUniversity", "name": "Technical University of Munich", "url": "https://www.tum.de/en/" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Universität Hohenheim", "url": "https://www.uni-hohenheim.de" },
+    "knowsAbout": ["AI agents", "Data Science", "Machine Learning", "Retrieval-Augmented Generation", "Information Management"]
+  }
+  </script>
 
   <title>Julian Leutz – AI &amp; Information Management</title>
 </head>
@@ -38,18 +57,18 @@
     </div>
 
     <div class="right">
-      <a href="https://www.linkedin.com/in/julian-leutz" target="_blank" rel="noopener noreferrer">
-        <i class="fa-brands fa-linkedin"></i>
+      <a href="https://www.linkedin.com/in/julian-leutz" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 448 512"><path d="M416 32H32H416H32Q18 32 9 41Q0 51 0 64V448Q0 461 9 471Q18 480 32 480H416Q430 480 439 471Q448 461 448 448V64Q448 51 439 41Q430 32 416 32ZM135 416H69H135H69V202H136V416ZM102 173Q86 173 75 162Q64 151 64 135Q64 118 75 107Q86 96 102 96Q119 96 129 107Q140 118 141 135Q140 151 129 162Q119 173 102 173ZM384 416H318H384H318V312Q319 292 313 274Q308 257 283 255Q258 256 250 272Q243 288 244 310V416H177V202H241V231H242Q248 218 264 208Q280 197 305 197Q354 198 370 226Q386 255 384 299V416Z"/></svg>
         <span>LinkedIn</span>
       </a>
 
-      <a href="https://github.com/Julilel" target="_blank" rel="noopener noreferrer">
-        <i class="fa-brands fa-github"></i>
+      <a href="https://github.com/Julilel" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 496 512"><path d="M166 397Q165 401 161 401Q155 401 155 397Q156 394 160 394Q165 394 166 397ZM135 393Q134 396 139 398Q144 399 145 396Q146 392 141 391Q136 390 135 393ZM179 391Q174 392 174 396Q175 399 180 399Q185 397 185 394Q184 391 179 391ZM245 8Q138 10 70 78Q2 146 0 252Q1 337 47 401Q93 465 170 491Q188 492 187 479Q187 475 187 464Q187 441 187 418Q185 418 168 420Q150 421 130 416Q110 410 102 388Q102 386 94 372Q86 359 74 351Q72 350 66 343Q59 337 76 336Q77 335 90 340Q103 344 114 362Q132 389 153 389Q175 389 187 383Q191 359 203 349Q159 347 126 327Q93 308 91 238Q91 218 97 205Q102 192 114 180Q112 174 110 156Q108 138 117 112Q135 109 159 123Q184 136 186 139Q186 139 186 139Q216 130 249 130Q281 130 312 139Q312 138 325 130Q337 122 353 116Q369 109 381 112Q390 138 388 156Q386 174 383 180Q395 192 402 205Q409 218 409 238Q408 286 392 309Q375 331 349 339Q323 347 294 349Q310 360 311 395Q311 432 311 461Q311 474 311 479Q310 492 328 491Q404 465 450 401Q495 337 496 252Q495 182 462 127Q428 72 372 40Q315 9 245 8ZM97 353Q95 355 98 358Q101 361 103 359Q105 357 102 354Q100 351 97 353ZM86 345Q86 347 89 349Q92 350 93 348Q94 346 91 344Q88 343 86 345ZM119 380Q117 383 120 387Q124 390 127 388Q128 385 125 381Q121 378 119 380ZM107 366Q105 368 107 372Q110 375 113 374Q115 372 113 368Q110 364 107 366Z"/></svg>
         <span>GitHub</span>
       </a>
 
-      <a href="#contact">
-        <i class="fa-solid fa-envelope"></i>
+      <a href="#contact" aria-label="Contact">
+        <svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 512 512"><path d="M48 64Q28 65 14 78Q1 92 0 112Q1 136 19 150L237 314Q256 326 275 314L493 150Q511 136 512 112Q511 92 498 78Q484 65 464 64H48ZM0 176V384V176V384Q1 411 19 429Q37 447 64 448H448Q475 447 493 429Q511 411 512 384V176L294 339Q277 352 256 352Q235 352 218 339L0 176Z"/></svg>
         <span>Contact</span>
       </a>
     </div>
@@ -64,29 +83,29 @@
 
         <div class="links">
           <a href="#education">
-            <i class="fa-solid fa-graduation-cap"></i>
+            <svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 640 512"><path d="M320 32Q308 32 296 36L16 137Q1 144 0 160Q1 176 16 183L74 204Q49 243 48 292V320Q45 364 26 401Q16 420 3 438Q-2 445 1 453Q4 461 12 464L76 480Q83 481 89 478Q94 474 96 467Q106 401 94 359Q89 337 80 317V292Q81 246 108 210Q127 187 157 175L314 113Q328 109 335 122Q339 136 326 143L169 204Q150 212 137 226L296 284Q308 288 320 288Q332 288 344 284L624 183Q639 176 640 160Q639 144 624 137L344 36Q332 32 320 32ZM128 408Q130 436 184 457Q238 479 320 480Q402 479 456 457Q510 436 512 408L497 263L355 314Q338 320 320 320Q302 320 286 314L143 263L128 408Z"/></svg>
             <span>Education</span>
           </a>
 
           <a href="#experience">
-            <i class="fa-solid fa-briefcase"></i>
+            <svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 512 512"><path d="M184 48H328H184H328Q335 49 336 56V96H176V56Q177 49 184 48ZM128 56V96V56V96H64Q37 97 19 115Q1 133 0 160V256H192H512V160Q511 133 493 115Q475 97 448 96H384V56Q383 32 368 16Q352 1 328 0H184Q160 1 144 16Q129 32 128 56ZM512 288H320H512H320V320Q320 334 311 343Q302 352 288 352H224Q210 352 201 343Q192 334 192 320V288H0V416Q1 443 19 461Q37 479 64 480H448Q475 479 493 461Q511 443 512 416V288Z"/></svg>
             <span>Experience</span>
           </a>
 
           <a href="#research">
-            <i class="fa-solid fa-flask"></i>
+            <svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 448 512"><path d="M288 0H160H288H128Q114 0 105 9Q96 18 96 32Q96 46 105 55Q114 64 128 64V197Q128 215 119 230L10 406Q0 423 0 443Q1 472 20 492Q40 511 69 512H379Q408 511 428 492Q447 472 448 443Q448 423 438 406L330 230Q320 215 320 197V64Q334 64 343 55Q352 46 352 32Q352 18 343 9Q334 0 320 0H288ZM192 197V64V197V64H256V197Q256 233 275 264L310 320H139L173 264Q192 233 192 197Z"/></svg>
             <span>Research</span>
           </a>
 
           <a href="#skills">
-            <i class="fa-solid fa-code"></i>
+            <svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 640 512"><path d="M393 1Q380 -2 368 4Q357 10 353 23L225 471Q222 484 228 496Q234 507 247 511Q260 514 272 508Q283 502 287 489L415 41Q418 28 412 16Q406 5 393 1ZM473 121Q464 131 464 144Q464 157 473 167L563 256L473 345Q464 355 464 368Q464 381 473 391Q483 400 496 400Q509 400 519 391L631 279Q640 269 640 256Q640 243 631 233L519 121Q509 112 496 112Q483 112 473 121ZM167 121Q157 112 144 112Q131 112 121 121L9 233Q0 243 0 256Q0 269 9 279L121 391Q131 400 144 400Q157 400 167 391Q176 381 176 368Q176 355 167 345L77 256L167 167Q176 157 176 144Q176 131 167 121Z"/></svg>
             <span>Skills</span>
           </a>
         </div>
       </div>
 
       <div class="headshot">
-        <img src="images/hero-headshot.jpg" alt="Julian Leutz">
+        <img src="images/hero-headshot-700.webp" srcset="images/hero-headshot-700.webp 700w, images/hero-headshot-1050.webp 1050w, images/hero-headshot.jpg 1280w" sizes="(max-width: 740px) 300px, 350px" width="700" height="783" alt="Julian Leutz" fetchpriority="high">
       </div>
     </section>
 
@@ -228,7 +247,8 @@
             <h3><a href="https://www.fim-rc.de/" target="_blank" rel="noopener noreferrer">Student Research Assistant</a></h3>
             <p class="institution"><a href="https://www.fim-rc.de/" target="_blank" rel="noopener noreferrer">FIM Research Institute for Information Management</a></p>
             <p class="period">Aug. 2023 - Present · Part-time</p>
-            <p class="location">📍 Stuttgart, Baden-Württemberg, Germany</p>
+            <p class="location">📍 Munich, Bavaria, Germany</p>
+            <p class="description">As part of this role, I currently serve as Managing Director of <a href="https://fim-gmbh.de/" target="_blank" rel="noopener noreferrer">fim GmbH</a>.</p>
           </div>
         </div>
 
@@ -255,7 +275,7 @@
       <div class="research-content">
         <div class="research-item">
           <h3>Bachelor Thesis</h3>
-          <a class="badge" href="https://www.bundestag.de/besuche/ausstellungen/pol_parl/poster-im-bundestag-1170454" target="_blank" rel="noopener noreferrer">🏛️ Presented at "Poster im Bundestag" · June 2026 <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          <a class="badge" href="https://www.bundestag.de/besuche/ausstellungen/pol_parl/poster-im-bundestag-1170454" target="_blank" rel="noopener noreferrer">🏛️ Presented at "Poster im Bundestag" · June 2026 <svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 512 512"><path d="M320 0Q306 0 297 9Q288 18 288 32Q288 46 297 55Q306 64 320 64H403L201 265Q192 275 192 288Q192 301 201 311Q211 320 224 320Q237 320 247 311L448 109V192Q448 206 457 215Q466 224 480 224Q494 224 503 215Q512 206 512 192V32Q512 18 503 9Q494 0 480 0H320ZM80 32Q46 33 23 55Q1 78 0 112V432Q1 466 23 489Q46 511 80 512H400Q434 511 457 489Q479 466 480 432V320Q480 306 471 297Q462 288 448 288Q434 288 425 297Q416 306 416 320V432Q415 447 400 448H80Q65 447 64 432V112Q65 97 80 96H192Q206 96 215 87Q224 78 224 64Q224 50 215 41Q206 32 192 32H80Z"/></svg></a>
           <p class="title"><strong>Title:</strong> Leveraging Agentic AI in Higher Education: An eDSR Approach for Designing a Learning Support System</p>
           <p class="period">May 2025 | University of Hohenheim | Grade: 1.0</p>
           <p class="description">
@@ -348,19 +368,19 @@
           <h3>Languages</h3>
           <div class="cells">
             <div class="cell">
-              <i class="fa-solid fa-language" style="font-size: 30px; color: #4a76ee;"></i>
+              <svg class="icon icon-lang" aria-hidden="true" focusable="false" viewBox="0 0 640 512"><path d="M0 128Q1 101 19 83Q37 65 64 64H256H576Q603 65 621 83Q639 101 640 128V384Q639 411 621 429Q603 447 576 448H320H64Q37 447 19 429Q1 411 0 384V128ZM320 128V384V128V384H576V128H320ZM178 176Q173 165 160 164Q147 165 142 176L78 320Q72 337 88 346Q105 352 114 336L123 316H197L206 336Q215 352 232 346Q248 337 242 320L178 176ZM160 233 179 276 160 233 179 276H141L160 233ZM448 164Q466 166 468 184V188H512H528Q546 190 548 208Q546 226 528 228H526L524 233Q511 269 485 298Q486 299 488 300L506 311Q521 322 513 338Q502 353 486 345L467 334Q460 330 454 325Q438 337 420 345L416 346Q399 352 390 336Q384 319 400 310L404 308Q413 304 422 298L410 286Q398 272 410 258Q424 246 438 258L453 272V273Q472 253 483 228H448H376Q358 226 356 208Q358 190 376 188H428V184Q430 166 448 164Z"/></svg>
               <span>German (Native)</span>
             </div>
             <div class="cell">
-              <i class="fa-solid fa-language" style="font-size: 30px; color: #4a76ee;"></i>
+              <svg class="icon icon-lang" aria-hidden="true" focusable="false" viewBox="0 0 640 512"><path d="M0 128Q1 101 19 83Q37 65 64 64H256H576Q603 65 621 83Q639 101 640 128V384Q639 411 621 429Q603 447 576 448H320H64Q37 447 19 429Q1 411 0 384V128ZM320 128V384V128V384H576V128H320ZM178 176Q173 165 160 164Q147 165 142 176L78 320Q72 337 88 346Q105 352 114 336L123 316H197L206 336Q215 352 232 346Q248 337 242 320L178 176ZM160 233 179 276 160 233 179 276H141L160 233ZM448 164Q466 166 468 184V188H512H528Q546 190 548 208Q546 226 528 228H526L524 233Q511 269 485 298Q486 299 488 300L506 311Q521 322 513 338Q502 353 486 345L467 334Q460 330 454 325Q438 337 420 345L416 346Q399 352 390 336Q384 319 400 310L404 308Q413 304 422 298L410 286Q398 272 410 258Q424 246 438 258L453 272V273Q472 253 483 228H448H376Q358 226 356 208Q358 190 376 188H428V184Q430 166 448 164Z"/></svg>
               <span>English (Full Professional)</span>
             </div>
             <div class="cell">
-              <i class="fa-solid fa-language" style="font-size: 30px; color: #4a76ee;"></i>
+              <svg class="icon icon-lang" aria-hidden="true" focusable="false" viewBox="0 0 640 512"><path d="M0 128Q1 101 19 83Q37 65 64 64H256H576Q603 65 621 83Q639 101 640 128V384Q639 411 621 429Q603 447 576 448H320H64Q37 447 19 429Q1 411 0 384V128ZM320 128V384V128V384H576V128H320ZM178 176Q173 165 160 164Q147 165 142 176L78 320Q72 337 88 346Q105 352 114 336L123 316H197L206 336Q215 352 232 346Q248 337 242 320L178 176ZM160 233 179 276 160 233 179 276H141L160 233ZM448 164Q466 166 468 184V188H512H528Q546 190 548 208Q546 226 528 228H526L524 233Q511 269 485 298Q486 299 488 300L506 311Q521 322 513 338Q502 353 486 345L467 334Q460 330 454 325Q438 337 420 345L416 346Q399 352 390 336Q384 319 400 310L404 308Q413 304 422 298L410 286Q398 272 410 258Q424 246 438 258L453 272V273Q472 253 483 228H448H376Q358 226 356 208Q358 190 376 188H428V184Q430 166 448 164Z"/></svg>
               <span>French (Professional Working)</span>
             </div>
             <div class="cell">
-              <i class="fa-solid fa-language" style="font-size: 30px; color: #4a76ee;"></i>
+              <svg class="icon icon-lang" aria-hidden="true" focusable="false" viewBox="0 0 640 512"><path d="M0 128Q1 101 19 83Q37 65 64 64H256H576Q603 65 621 83Q639 101 640 128V384Q639 411 621 429Q603 447 576 448H320H64Q37 447 19 429Q1 411 0 384V128ZM320 128V384V128V384H576V128H320ZM178 176Q173 165 160 164Q147 165 142 176L78 320Q72 337 88 346Q105 352 114 336L123 316H197L206 336Q215 352 232 346Q248 337 242 320L178 176ZM160 233 179 276 160 233 179 276H141L160 233ZM448 164Q466 166 468 184V188H512H528Q546 190 548 208Q546 226 528 228H526L524 233Q511 269 485 298Q486 299 488 300L506 311Q521 322 513 338Q502 353 486 345L467 334Q460 330 454 325Q438 337 420 345L416 346Q399 352 390 336Q384 319 400 310L404 308Q413 304 422 298L410 286Q398 272 410 258Q424 246 438 258L453 272V273Q472 253 483 228H448H376Q358 226 356 208Q358 190 376 188H428V184Q430 166 448 164Z"/></svg>
               <span>Spanish (Elementary)</span>
             </div>
           </div>
@@ -376,7 +396,7 @@
         <div class="text">
           Interested in collaboration or just want to get in touch? I look forward to hearing from you!
           <br><br>
-          You can also reach me directly via <a href="https://www.linkedin.com/in/julian-leutz" target="_blank">LinkedIn</a>.
+          You can also reach me directly via <a href="https://www.linkedin.com/in/julian-leutz" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
         </div>
 
         <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
@@ -387,79 +407,27 @@
           <input type="hidden" name="subject" value="New Contact Form Submission from Portfolio">
           
           <!-- Honeypot Spam Protection -->
-          <input type="checkbox" name="botcheck" style="display: none;">
+          <input type="checkbox" name="botcheck" class="hp-field" tabindex="-1" autocomplete="off">
           
           <label for="name">Name</label>
-          <input type="text" id="name" name="name" required>
+          <input type="text" id="name" name="name" maxlength="120" autocomplete="name" required>
 
           <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
+          <input type="email" id="email" name="email" maxlength="254" autocomplete="email" required>
 
           <label for="message">Message</label>
-          <textarea id="message" name="message" cols="30" rows="10" required></textarea>
+          <textarea id="message" name="message" cols="30" rows="10" maxlength="5000" required></textarea>
 
           <button type="submit" id="submit-btn">Send Message</button>
           <p class="form-note">Your message is sent via <a href="https://web3forms.com/" target="_blank" rel="noopener noreferrer">Web3Forms</a> and is only used to reply to you.</p>
           
           <!-- Success/Error Messages -->
-          <div id="form-message" style="display: none; margin-top: 15px; padding: 15px; border-radius: 5px; text-align: center;"></div>
+          <div id="form-message" class="form-message" role="status" aria-live="polite"></div>
         </form>
       </div>
     </section>
   </main>
 
-  <script>
-    // Contact Form Handler
-    const form = document.getElementById('contact-form');
-    const submitBtn = document.getElementById('submit-btn');
-    const formMessage = document.getElementById('form-message');
-
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      
-      // Disable button and show loading state
-      submitBtn.disabled = true;
-      submitBtn.textContent = 'Sending...';
-      formMessage.style.display = 'none';
-      
-      try {
-        const formData = new FormData(form);
-        const response = await fetch('https://api.web3forms.com/submit', {
-          method: 'POST',
-          body: formData
-        });
-        
-        const data = await response.json();
-        
-        if (data.success) {
-          // Success message
-          formMessage.style.display = 'block';
-          formMessage.style.backgroundColor = '#4CAF50';
-          formMessage.style.color = 'white';
-          formMessage.innerHTML = '✅ Message sent successfully! I\'ll get back to you soon.';
-          
-          // Reset form
-          form.reset();
-          
-          // Hide message after 5 seconds
-          setTimeout(() => {
-            formMessage.style.display = 'none';
-          }, 5000);
-        } else {
-          throw new Error('Form submission failed');
-        }
-      } catch (error) {
-        // Error message with LinkedIn fallback
-        formMessage.style.display = 'block';
-        formMessage.style.backgroundColor = '#f44336';
-        formMessage.style.color = 'white';
-        formMessage.innerHTML = '❌ Failed to send message. Please contact me via <a href="https://www.linkedin.com/in/julian-leutz" target="_blank" style="color: white; text-decoration: underline;">LinkedIn</a> instead.';
-      } finally {
-        // Re-enable button
-        submitBtn.disabled = false;
-        submitBtn.textContent = 'Send Message';
-      }
-    });
-  </script>
+  <script src="script.js?v=1"></script>
 </body>
 </html>
